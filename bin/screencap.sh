@@ -24,4 +24,4 @@ case $1 in
         ;;
 esac
 
-ffmpeg -f x11grab -r 60 -s ${WIDTH}x${HEIGHT} -i ":0.0+$X1,0" -vcodec libx264 -vpre libvpx-1080p -threads 0 ${DIR}${2}.mkv
+ffmpeg -f x11grab -r 25 -s ${WIDTH}x${HEIGHT} -i ":0.0+$X1,0" -vcodec libx264 -vpre libvpx-1080p -threads 0 ${DIR}${2}.mkv
